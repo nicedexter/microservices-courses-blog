@@ -2,6 +2,9 @@
 
 minikube start
 eval \$(minikube docker-env)
-kubectl apply -f posts.yaml
-kubectl get pods
-kubectl describe pod posts
+
+k delete pod posts
+k apply -f posts-depl.yaml
+k get deployments
+k describe deployment posts-depl
+k delete deployment posts-depl
