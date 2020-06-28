@@ -17,3 +17,5 @@ kubectl get pods -n kube-system
 
 k apply -f ingress-srv.yaml
 sudo /etc/hosts
+
+skaffold dev
