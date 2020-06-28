@@ -1,7 +1,7 @@
 # Log
 
 minikube start
-eval \$(minikube docker-env)
+eval $(minikube docker-env)
 
 k delete pod posts
 k apply -f posts-depl.yaml
