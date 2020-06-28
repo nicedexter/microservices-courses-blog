@@ -11,3 +11,10 @@ k delete deployment posts-depl
 
 docker build -t nicedexter/posts .
 k rollout restart deployment posts-depl
+
+minikube addons enable ingress
+kubectl get pods -n kube-system
+
+k apply -f ingress-srv.yaml
+
+sudo /etc/hosts
