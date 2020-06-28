@@ -14,4 +14,4 @@ spec:
             serviceName: posts-clusterip-srv
             servicePort: 4000
 
-  
+   
